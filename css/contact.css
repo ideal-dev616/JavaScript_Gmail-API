@@ -1,0 +1,155 @@
+body {
+    background-image: url(../images/bg-01.jpg);
+    background-size: cover;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.row.inner-scroll {
+    height: 445px;
+    overflow: auto;
+}
+
+.mycard-footer {
+    height: 25px;
+    background: #333333;
+    font-size: 15px;
+    text-indent: 10px;
+   /* border-radius: 0 0px 4px 4px;*/
+}
+
+.gallery-card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+	    height: 132px;
+		margin-bottom:14px;
+}
+.gallery-card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    /*padding: 1.25rem;*/
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+label{
+    margin-bottom: 0 !important;
+}
+/*--checkbox--*/
+
+.block-check {
+    display: block;
+    position: relative;
+   
+   
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.block-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+img:hover {
+    background-color: #2196f3 !important;
+    border: none;
+}
+
+/* When the checkbox is checked, add a blue background */
+.block-check input:checked ~ .checkmark {
+    background-color: #19802f;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.block-check input:checked ~ .checkmark:after {
+    display: block;
+    width: 14px;
+}
+
+/* Style the checkmark/indicator */
+.block-check .checkmark:after {
+    left: 19px;
+    top: 5px;
+    width: 30px;
+    width: 5px;
+    height: 30px;
+    border: solid white;
+    border-width: 0px 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.logo h1 {
+    color: white;
+}
+
+#refl {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    -moz-transform: rotateX(210deg);
+    -o-transform: rotateX(210deg);
+    -webkit-transform: rotateX(210deg);
+    transform: rotateX(210deg);
+    perspective: 200px;
+    -webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(20%, transparent), to(rgba(0, 0, 0, 0.4)));
+}
+
+.call-btn, .deny-btn {
+    margin-top: 2px;
+    cursor: pointer;
+}
+.deny-btn {
+    transform: rotate(130deg);
+}
+.userid {
+    text-shadow: 0 0 12px black;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+/*--checkbox css end--*/
